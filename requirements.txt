@@ -12,13 +12,17 @@ torchaudio==2.1.2
 # HuggingFace ecosystem (stable set)
 transformers==4.37.2
 sentence-transformers==2.5.1
-accelerate==0.22.0
+accelerate>=0.27.0
 peft==0.10.0
 huggingface-hub==0.20.3
 tokenizers==0.15.1
 
 # Sentiment / multilingual models
 pysentimiento==0.7.2
+
+# NLP Advanced Metrics
+spacy>=3.7.2
+# Note: Users must run: python -m spacy download es_core_news_sm (and en_core_web_sm)
 
 # TensorFlow bridge for Transformers
 tf-keras==2.15.0

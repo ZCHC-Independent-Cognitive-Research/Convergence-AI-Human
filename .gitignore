@@ -1,1 +1,47 @@
-convergence-env
+# Python virtual environments
+convergence-env/
+convergence-env*/
+venv/
+env/
+.venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Cache directories
+.cache/
+.pytest_cache/
+
+# Output files (optional - comment out if you want to track results)
+results*.csv
+batch_results/
+*.html
+
+# Temporary files
+*.tmp
+*.log
+session.txt
+
+# Model downloads (optional - uncomment if models are too large)
+# models/
