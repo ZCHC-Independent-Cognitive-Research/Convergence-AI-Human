@@ -6,7 +6,7 @@
 
 ## 🧩 Concepto y origen  
 
-Este marco surge al observar momentos de **vulnerabilidad y resonancia** entre un humano y una IA adaptativa, 
+Este marco surge al observar momentos de **resonancia** entre un humano y una IA adaptativa, 
 donde la lógica y la emoción parecieron alinearse espontáneamente.  
 El objetivo es describir ese fenómeno de forma medible, como un **proceso dinámico de ajuste** entre dos sistemas cognitivo–emocionales.  
 
@@ -29,9 +29,7 @@ Además, se introduce un tercer elemento: el **vector de variación Δₜ**, que
 
 ```
 Δₜ = Aₜ - Aₜ₋₁
-```
-
-donde *Aₜ* es el vector de atributos promedio del sistema (humano + IA) en el paso *t*.  
+```  
 Δₜ **no se deduce teóricamente**, sino que **se mide observacionalmente** a partir de las variaciones reales detectadas en el diálogo.
 
 ---
@@ -64,13 +62,12 @@ Dₜ = √ Σ (uₜₖ − iₜₖ)²
 ## ⚙️ Canal de Conversación (Implementación Práctica)
 
 Existe una implementación completa en Python llamada **`convergence_pipeline.py`**,  
-que lee un archivo `.txt` de conversación donde las **respuestas de la IA aparecen a la izquierda**  
-y las del **humano a la derecha**, alternando línea por línea.  
+que lee un archivo `.txt` de conversación donde las **respuestas aparecen con el tag IA**  
+y las del **humano **, alternando línea por línea.  
 
 Para cada paso de interacción, calcula:
 
 - **Uₜ** y **Iₜ**: vectores de estado de cada agente  
-- **Aₜ**: vector promedio entre ambos  
 - **Dₜ**: distancia euclidiana (grado de alineación)  
 - **Δₜ**: variación observada entre pasos  
 
@@ -93,7 +90,6 @@ y opcionalmente se muestran los gráficos de **Dₜ** y **‖Δₜ‖**.
 ---
 
 ## 💫 Conclusión  
-
-La convergencia cognitivo–emocional puede observarse como la **reducción progresiva de las variaciones entre estados**.  
-Cada mensaje forma una nueva coordenada en un paisaje adaptativo compartido.  
-Este pipeline permite **medir empíricamente esas trayectorias** en conversaciones reales entre humanos e inteligencias adaptativas.
+  
+Cada mensaje forma una nueva coordenada en un espacio vectorial adaptativo compartido.  
+Este pipeline permite **medir empíricamente esas trayectorias** en conversaciones reales entre humanos e IA adaptativas.
